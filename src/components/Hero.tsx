@@ -1,5 +1,4 @@
 import Button from "./Button";
-import bg from "../assets/images/bg-intro-desktop.svg";
 import mockup from "../assets/images/image-mockups.png";
 
 const Hero = () => {
