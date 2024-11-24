@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        font-family: "Public Sans";
+        /* border: 1px solid red; */
+    }
+    .bg {
+        background-image: url("./assets/images/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .bg {
+            background-size: 1000px;
+            background-image: url("./assets/images/bg-intro-desktop.svg");
+            background-position: 170% 180%;
+        }
+    }
+
+    .mockups-bg {
+        background-image: url("./assets/images/bg-intro-mobile.svg");
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        @apply text-4xl font-light text-dark-blue;
+    }
+
+    h2 {
+        @apply text-4xl text-dark-blue;
+    }
+
+    h3 {
+        @apply text-2xl text-dark-blue;
+    }
+
+    p {
+        @apply text-lg text-grayish-blue;
+    }
+
+    .hero--wrapper {
+        @apply max-w-screen-sm mx-auto;
+    }
+    .gradient {
+        @apply bg-gradient-to-r from-lime-green to-bright-cyan transition;
+    }
+
+    .gradient:hover {
+        @apply opacity-50;
+    }
+
+    .navbar--wrapper {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+}
